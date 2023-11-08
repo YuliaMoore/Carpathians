@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOURS TO THE CARPATHIANS FROM LVIV</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -35,6 +40,23 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu js-open-menu"
+              href="./images/menu.svg"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -78,7 +100,7 @@
         <ul>
           <li>
             <img src="" alt="" />
-            <h4>Ascent to Hoverla</h4>
+            <h4>Ascent to Hoverla</h4>
             <p>From UAH 4,499/person</p>
             <button>More details</button>
           </li>
@@ -100,6 +122,35 @@
         <h2>Reviews</h2>
       </div>
       <div class="gallery container"><h2>Gallery</h2></div>
+      <div class="questions">
+<h3>Do you have any questions?</h3>
+<p>You can leave your questions here and our manager will call you back within 10 minutes</p>
+
+      </div>
     </main>
+     <div class="mobile-menu js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__wrap">
+        <ul class="mobile-nav">
+          <li class="mobile-nav__unit"><a href="#" class="link mobile-nav__link">About us</a></li>
+          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link">Тours</a></li>
+          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Reviews</a></li>
+          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Gallery</a></li>
+          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-soc">
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Instagram</a></li>
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Telegram</a></li>
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Facebook</a></li>
+      </ul> 
+    </div> 
+
+        <!-- <script src="./js/modal.js"></script> -->
+        <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

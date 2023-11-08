@@ -1,0 +1,12 @@
+.navigation {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #f7fbfb;
+  }
+}

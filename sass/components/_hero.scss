@@ -1,0 +1,39 @@
+.hero {
+  background-image: url(./../../images/hero_desk_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  font-family: Montserrat;
+  color: #f7fbfb;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48.76px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 188px;
+}
+
+.hero__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f7fbfb;
+  margin-bottom: 88px;
+}
+
+.hero_button {
+  background-color: #5b86a1;
+  color: #f7fbfb;
+  border-color: transparent;
+  padding: 15px 91px;
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 193px;
+}
