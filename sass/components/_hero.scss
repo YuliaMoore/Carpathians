@@ -1,8 +1,16 @@
 .hero {
-  background-image: url(./../../images/hero_desk_1920.jpg);
+  background-image: url(./../../images/hero/hero_mobile_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min: $tab) {
+    background-image: url(./../../images/hero/hero_tablet_bg.jpg);
+  }
+
+  @media screen and (min: $dsk) {
+    background-image: url(./../../images/hero/hero_desk_bg.jpg);
+  }
 }
 
 .hero__title {

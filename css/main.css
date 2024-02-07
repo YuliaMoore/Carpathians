@@ -12,6 +12,10 @@ ul {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .container {
   padding: 0 32px;
 }
@@ -99,10 +103,20 @@ h2 {
 }
 
 .hero {
-  background-image: url(./../../images/hero_desk_1920.jpg);
+  background-image: url(./../../images/hero/hero_mobile_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min: 768px) {
+  .hero {
+    background-image: url(./../../images/hero/hero_tablet_bg.jpg);
+  }
+}
+@media screen and (min: 1440px) {
+  .hero {
+    background-image: url(./../../images/hero/hero_desk_bg.jpg);
+  }
 }
 
 .hero__title {
@@ -155,4 +169,8 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
   color: #f7fbfb;
+}
+
+.swiperGallery {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

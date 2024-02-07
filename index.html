@@ -15,75 +15,78 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="#"> <img class="logo_img" src="./images/logo.png" /> </a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About us</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Tours</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Reviews</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Gallery</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="menu-button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="переключатель мобильного меню"
-          >
-            <use
-              class="icon-menu js-open-menu"
-              href="./images/menu.svg"
-            ></use>
-          </svg>
-        </button>
-      </div>
+      <!-- <div class="container">
+    <a href="#"> <img class="logo_img" src="./images/logo.png" /> </a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Tours</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Reviews</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Gallery</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="menu-button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="40" height="40" aria-label="переключатель мобильного меню">
+        <use class="icon-menu js-open-menu" href="./images/menu.svg"></use>
+      </svg>
+    </button>
+  </div> -->
     </header>
     <main>
-      <div class="hero container">
-        <h1 class="hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
-        <p class="hero__text">
-          Journeys to the very heart of the <br />Carpathians for those who want
-          a real reboot
-        </p>
-        <button class="hero_button">BOOK A TOUR</button>
-      </div>
-      <div class="about container">
-        <h2>About us</h2>
-        <p class="about__text">
-          Travel is our life. We have been organizing tours to the Carpathians
-          since 2007 and have never been bored for a single day. The Carpathians
-          are many interesting and unexplored places that are worth visiting and
-          showing them to others.
-        </p>
-        <p class="about__text second_p">
-          Coming to the Carpathians will make you forget about the polluted,
-          noisy world and enjoy untouched nature. From picturesque forests to
-          clean rivers and lakes and Carpathian streams between the mountains,
-          which offer magical landscapes and allow you to forget about all
-          problems and unnecessary thoughts.
-        </p>
-      </div>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+          <p class="hero__text">
+            Journeys to the very heart of the <br />Carpathians for those who
+            want a real reboot
+          </p>
+          <button class="hero_button">BOOK A TOUR</button>
+        </div>
+        <div class="about container">
+          <h2>About us</h2>
+          <p class="about__text">
+            Travel is our life. We have been organizing tours to the Carpathians
+            since 2007 and have never been bored for a single day. The
+            Carpathians are many interesting and unexplored places that are
+            worth visiting and showing them to others.
+          </p>
+          <p class="about__text second_p">
+            Coming to the Carpathians will make you forget about the polluted,
+            noisy world and enjoy untouched nature. From picturesque forests to
+            clean rivers and lakes and Carpathian streams between the mountains,
+            which offer magical landscapes and allow you to forget about all
+            problems and unnecessary thoughts.
+          </p>
+        </div>
+      </section>
+
       <div class="advantages container">
         <h2>Our advantages</h2>
         <ul class="advantages__list">
@@ -123,34 +126,53 @@
       </div>
       <div class="gallery container"><h2>Gallery</h2></div>
       <div class="questions">
-<h3>Do you have any questions?</h3>
-<p>You can leave your questions here and our manager will call you back within 10 minutes</p>
-
+        <h3>Do you have any questions?</h3>
+        <p>
+          You can leave your questions here and our manager will call you back
+          within 10 minutes
+        </p>
       </div>
-    </main>
-     <div class="mobile-menu js-menu-container">
-      <button class="menu-toggle js-close-menu">
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div class="mobile-menu__wrap">
-        <ul class="mobile-nav">
-          <li class="mobile-nav__unit"><a href="#" class="link mobile-nav__link">About us</a></li>
-          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link">Тours</a></li>
-          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Reviews</a></li>
-          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Gallery</a></li>
-          <li class="mobile-nav__unit"><a href="#" class="mobile-nav__link link">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="mobile-soc">
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Instagram</a></li>
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Telegram</a></li>
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="#">Facebook</a></li>
-      </ul> 
-    </div> 
 
-        <!-- <script src="./js/modal.js"></script> -->
-        <script src="./js/mobile-menu.js"></script>
+      <section class="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+
+          <div class="swiper swiperGallery">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="image-slider">
+                  <img src="./images/gallery/gallery1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-slider">
+                  <img src="./images/gallery/gallery2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery/gallery3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery/gallery4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery/gallery5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery/gallery6.jpg" alt="" />
+              </div>
+              ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="./js/gallery-swiper.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
